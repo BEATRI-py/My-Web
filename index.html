@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Tech Page</title>
+    <link rel="stylesheet" href="css/style.CSS">
+</head>   
+<body>
+    <header>
+        <h1>My First Web Tech Page</h1>
+        <p>welcome to my personal website
+</p>
+</header>
+<nav>
+    <a href="#about">About Me</a><br>
+    <a href="#hobbies">My Hobbies</a>
+    <br>
+
+    <a href="#learning">My Learning Plan</a><br>
+    <a href="#photos">My Photos</a>
+    <br>
+
+    <a href="#media">My Media</a><br>
+    <a href="#contact">My Contact</a>
+
+    <a href="http://www.freecodecamp.org" target="-blank">FreeCodeCamp</a>
+    <header>
+</nav>
+<main>
+<section id="About">
+    <h2>About Me</h2>
+    <ol>
+        <li>Practicing coding every day 
+        <li>Studying hard
+        <li>Resting,very important    
+        </li>
+    </ol>
+        <p>
+            <li>Hi, my name is Muyembe M Beatrice.I am a wed development student who is learning to create websites and web applications.<br>I am interested in improving my coding skills and understanding how websites work.<br>My goal is to become a confident web developer who can build responsive,user-friendly and functional websites.</li>
+        </p>
+    </section>
+<Section id ="Hobbies">
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>Reading</li>    
+        <li>Listening to music</li>
+        <li>Cooking</li>
+    </ul>
+</Section>
+<section id="Learning" class="content-section">
+    <h2>My Learning Plan</h2>
+    <p>
+        These are some steps i will take to improve my web development skills:
+    </p>
+    <ol>
+        <li>Learn and practice HTML regularly.</li>
+        <li>learn CSS and practice creating page layouts.</li>
+        <li>learn JavaScript and build interactive websites.</li>
+        <li>Build small projects to improve my practical skills.</li>
+    </ol>
+    <table>
+
+        <caption>
+            My Weekly Web Learning Plan
+        </caption>
+        <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Topic</th>
+            <th>Practice Task</th>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>11:00 PM - 13:00 AM</td>
+            <td>CSS</td>
+            <td>Style a web page</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>2:00 PM - 4:00 PM</td>
+            <td>Study HTML</td>
+            <td>Practice creating web pages</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Study JavaScript</td>
+            <td>Create a simple interaction features</tr>
+        </tr>
+    </table>
+</section>
+<section id="Photos" class="content-section">
+    <h2>My Photos</h2>
+    <div class="gallery">
+        <figure>
+            <img src="Images/Photo 1.jpg">
+            <img src="Images/Photo 2.jpg">
+            <img src="Images/Photo 3.jpg">
+        </figure>
+    </div>
+</section>
+<section id="Media" class="content-section">
+    <h2>My Media</h2>
+    <p>My video and audio will go here.</p>
+    <h3>My introduction video</h3>
+    <video controls>
+        <source src="Vidoes/intro.mp4.m4a" type="video/mp4">
+        My browser does not support video element.
+    </video>
+    <p>
+        In this video, i introdunce myself, talking about my programme, and explain one web development skills i hope to learn. 
+    </p>
+<h3>My Audio</h3>
+<audio controls>
+    <source src="Vidoes/Audio.mp3.mp4"  type="audio/mpeg">
+    My browser does not support the audio element.
+</audio>
+<p>This recording explains some of my hobbies and why i enjoy studying web technologies.
+</p>
+ </section>
+<section id="Contact">
+    <h2>MyContact</h2> 
+    <p>My contact form will go here.</p>
+    <form action="#"method="post">
+        <label for="name">Name:</label>
+        <input type="text"
+            id="name"
+            name="name"
+            required>
+        <label for="email">Email:</label>
+        <input type="email"
+            id="email"
+            name="email"
+            required>
+        <label for="topic">Topic:</label>
+        <input type="text"
+               id="topic"
+               name="topic" 
+               required>
+        <label for="message">Message:</label>
+        <textarea id="message"
+                  name="message"
+                  rows="6" 
+                  required></textarea>
+        <button type="submit">
+            Submit
+        </button>   
+    <p>
+        This form is for demonstration purposes only and does not actually send any messages.
+    </p>
+    </form>
+</section>
+</main>
+<footer>
+    <p>&copy; 2026 My Personal Website</p>
+</footer>
+<script> window.addEventListener("load", function() { document.getElementById("loader").style.diplay = "none";});</script>
+</body>
+</html>
