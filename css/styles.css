@@ -214,4 +214,27 @@ footer {
 footer p {
     margin: 5px 0;
 }
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode header,
+body.dark-mode section,
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark-mode a {
+    color: #66b3ff;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #2b2b2b;
+    color: white;
+    border-color: #666;
+}
 

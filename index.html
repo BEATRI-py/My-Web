@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Tech Page</title>
-    <link rel="stylesheet" href="css/style.CSS">
+    <link rel="stylesheet" href="css/styles.css">
 </head>   
 <body>
     <header>
-        <h1>My First Web Tech Page</h1>
-        <p>welcome to my personal website
-</p>
+    <h1>My First Web Tech Page</h1>
+    <p>Welcome to my personal website</p>
+
+    <button id="themeButton" type="button">
+        🌙 Dark Mode
+    </button>
 </header>
 <nav>
     <a href="#about">About Me</a><br>
@@ -18,6 +21,7 @@
     <br>
 
     <a href="#learning">My Learning Plan</a><br>
+    <a href="#skills">My Skills</a>
     <a href="#photos">My Photos</a>
     <br>
 
@@ -28,7 +32,7 @@
     <header>
 </nav>
 <main>
-<section id="About">
+<section id="about">
     <h2>About Me</h2>
     <ol>
         <li>Practicing coding every day 
@@ -40,7 +44,7 @@
             <li>Hi, my name is Muyembe M Beatrice.I am a wed development student who is learning to create websites and web applications.<br>I am interested in improving my coding skills and understanding how websites work.<br>My goal is to become a confident web developer who can build responsive,user-friendly and functional websites.</li>
         </p>
     </section>
-<Section id ="Hobbies">
+<Section id ="hobbies">
     <h2>My Hobbies</h2>
     <ul>
         <li>Reading</li>    
@@ -48,7 +52,7 @@
         <li>Cooking</li>
     </ul>
 </Section>
-<section id="Learning" class="content-section">
+<section id="learning" class="content-section">
     <h2>My Learning Plan</h2>
     <p>
         These are some steps i will take to improve my web development skills:
@@ -84,22 +88,90 @@
         </tr>
         <tr>
             <td>Friday</td>
+            <td>3:00 PM - 5:00 PM</td>
             <td>Study JavaScript</td>
             <td>Create a simple interaction features</tr>
         </tr>
     </table>
+    <div class="study-calculator">
+
+    <h3>Study Hours Calculator</h3>
+
+    <label for="hoursPerDay">Hours per day:</label>
+    <input
+        type="number"
+        id="hoursPerDay"
+        min="0"
+        step="0.5"
+        placeholder="e.g. 3"
+    >
+
+    <label for="daysPerWeek">Days per week:</label>
+    <input
+        type="number"
+        id="daysPerWeek"
+        min="1"
+        max="7"
+        placeholder="e.g. 5"
+    >
+
+    <button type="button" id="calculateHours">
+        Calculate
+    </button>
+
+    <p id="hoursResult"></p>
+
+</div>
 </section>
-<section id="Photos" class="content-section">
+<section id="skills" class="content-section">
+    <h2>My Skills</h2>
+    <input
+    type="text"
+    id="skillSearch"
+    placeholder="Search for a skill..."
+    aria-label="Search skills"
+>
+
+<button type="button" id="resetSkills">
+    Reset
+</button>
+
+<p id="noSkillsMessage"></p>
+    <div class="skills-container">
+        <div class="skill-card">
+            <h3>HTML</h3>
+            <P>
+                I have learnt how to create the structure of a web page using HTML elements and semantic sections.
+
+            </P>
+        </div>
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <P>
+                I have learnt how to style web pages using colours, spacing, borders, fonts and layouts.
+            </P>
+        </div>
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>
+                I am learning how to make websites interactive using JavaScript, functions, events and DOM updates.
+            </p>
+        </div>
+
+    </div>
+</section>
+<section id="photos" class="content-section">
     <h2>My Photos</h2>
     <div class="gallery">
         <figure>
-            <img src="Images/Photo 1.jpg">
+            <img src="Images/Photo 1.jpg" alt="Photo 1">
+            <figcaption>me in a Girls Brigde uniform</figcaption>
             <img src="Images/Photo 2.jpg">
             <img src="Images/Photo 3.jpg">
         </figure>
     </div>
 </section>
-<section id="Media" class="content-section">
+<section id="media" class="content-section">
     <h2>My Media</h2>
     <p>My video and audio will go here.</p>
     <h3>My introduction video</h3>
@@ -118,33 +190,47 @@
 <p>This recording explains some of my hobbies and why i enjoy studying web technologies.
 </p>
  </section>
-<section id="Contact">
-    <h2>MyContact</h2> 
+    <section id="contact">
+
+    <h2>My Contact</h2>
+
     <p>My contact form will go here.</p>
-    <form action="#"method="post">
+
+    <form id="contactForm" action="#" method="post">
+
         <label for="name">Name:</label>
         <input type="text"
-            id="name"
-            name="name"
-            required>
+               id="name"
+               name="name"
+               required>
+
         <label for="email">Email:</label>
         <input type="email"
-            id="email"
-            name="email"
-            required>
+               id="email"
+               name="email"
+               required>
+
         <label for="topic">Topic:</label>
         <input type="text"
                id="topic"
-               name="topic" 
+               name="topic"
                required>
+
         <label for="message">Message:</label>
         <textarea id="message"
                   name="message"
-                  rows="6" 
+                  rows="6"
                   required></textarea>
-        <button type="submit">
-            Submit
-        </button>   
+
+        <button type="submit">Submit</button>
+
+        <div id="formFeedback"></div>
+
+    </form>
+
+</section><h2>My Contact</h2> 
+
+              
     <p>
         This form is for demonstration purposes only and does not actually send any messages.
     </p>
@@ -155,5 +241,6 @@
     <p>&copy; 2026 My Personal Website</p>
 </footer>
 <script> window.addEventListener("load", function() { document.getElementById("loader").style.diplay = "none";});</script>
+<script src="js/script.js" defer></script>
 </body>
 </html>
